@@ -1,0 +1,168 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+.fl{
+    float: left;   
+}
+
+.fr{
+    float: right;   
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.weather-settings{
+    padding: 10px;
+    width: 0px;
+    border: 1px solid black;
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    top: 10px;
+    right: 205px;
+    background: #FFF;
+    border: 1px solid #CCC;
+    display: none; 
+}
+
+
+.weather-form{
+    margin: 0;   
+}
+
+.weather-form label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.weather-form input, .weather-form select{
+    display: block;
+    float: right;
+	width: 50%;
+}
+.weather-form button{
+    display: block;
+    clear: both;
+    border: 1px solid green;
+    border-radius: 5px;
+    background: linear-gradient(green, darkgreen);
+    text-transform: uppercase;
+    color: #fff;
+    width: 100%;
+}
+
+.weather-form button:active{
+    background: linear-gradient(darkgreen, green); 
+}
+
+.widget{
+    border: 1px solid #CCC;
+    overflow: hidden;
+    height: 400px;
+    width: 300px;
+    margin: 10px;
+}
+
+.widget header{
+    background: #FAFAFA;
+    margin: 0;
+    padding: 5px 10px;
+    border-bottom: 1px solid #CCC;
+}
+.widget header h2{
+    margin: 0; 
+    float: left;
+    
+}
+
+.widget-content{
+    padding: 5px 10px;   
+    
+}
+
+.widget-settings{
+    display: block;
+    float: right;
+    position: relative;
+    background: url(assets/settings_icon.png);
+    width: 32px;
+    height: 32px;
+}
+.widget-settings-btn{
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.widget-settings-btn:checked + div{
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+/* Keyframe Animations */
+
+@-webkit-keyframes spin{
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	
+	100%{
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes spin{
+	0% {
+		-moz-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	
+	100%{
+		-moz-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-o-keyframes spin{
+	0% {
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	
+	100%{
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-ms-keyframes spin{
+	0% {
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	
+	100%{
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+

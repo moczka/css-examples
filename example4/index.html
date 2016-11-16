@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>AJAX Calls</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body>
+    <div class="widget">
+        <header class="clearfix">
+            <h2>Weather</h2>
+            <label class="widget-settings">
+                
+            <input type="checkbox" class="widget-settings-btn">
+              
+                <div class="weather-settings">
+                    <form class="weather-form" id="weather-options" action="http://api.openweathermap.org/data/2.5/weather" method="GET" target="weather-output">
+                        <label>City: 
+                            <input name="city" type="text"/>
+                        </label>
+                        <label>Country: 
+                            <select name="country">
+                                <option value="usa">USA</option>
+                                <option value="co">Colombia</option>
+                                <option value="uk">UK</option>
+                            </select>
+                        </label>
+                        <label>Zip Code: 
+                            <input name="zip"/>
+                        </label>
+                        <button>Get Data</button>
+                   </form>
+                </div>
+                
+            </label>
+        </header>
+        <div class="widget-content" id="weather-output">
+        <p>Hello there world!</p>
+        
+        
+        </div>
+    </div>
+    
+    
+
+    
+    
+</body>
+</html>
